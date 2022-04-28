@@ -26,6 +26,13 @@ export default function About() {
             <li>
               発表者が資料をツイートで告知している場合には、そのツイートを埋め込んでいます。
             </li>
+            <li>
+              サイトのリポジトリは
+              <a href="https://github.com/vzvu3k6k/unofficial-gocon2022spring-materials">
+                https://github.com/vzvu3k6k/unofficial-gocon2022spring-materials
+              </a>
+              で管理しています。
+            </li>
           </ul>
         </p>
       </main>
