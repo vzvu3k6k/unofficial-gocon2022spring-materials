@@ -13,9 +13,9 @@ export function SpeakerDeck({ src }) {
         height: "315px",
       }}
       src={src}
-      allowFullScreen="true"
-      mozallowfullscreen="true"
-      webkitallowfullscreen="true"
+      allowFullScreen={true}
+      mozallowfullscreen={true}
+      webkitallowfullscreen={true}
       data-ratio="1.7777777777777777"
       frameBorder="0"
     ></iframe>
