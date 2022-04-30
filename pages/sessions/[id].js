@@ -23,6 +23,12 @@ export default function Session({ session }) {
             <TwitterTweetEmbed key={tw} tweetId={tw} />
           ))}
         {session.speakerdeck && <SpeakerDeck src={session.speakerdeck} />}
+        {session.links &&
+          session.links.map((link) => (
+            <a key={link.url} href={link.url}>
+              {link.label}
+            </a>
+          ))}
       </main>
 
       <Footer />
