@@ -19,12 +19,12 @@ export default function Session({ session }) {
           [{session.id}] {session.title}
         </h1>
 
+        {session.youtube && <YouTube url={session.youtube} />}
+        {session.speakerdeck && <SpeakerDeck src={session.speakerdeck} />}
         {session.tweets &&
           session.tweets.map((tw) => (
             <TwitterTweetEmbed key={tw} tweetId={tw} />
           ))}
-        {session.youtube && <YouTube url={session.youtube} />}
-        {session.speakerdeck && <SpeakerDeck src={session.speakerdeck} />}
         {session.links &&
           session.links.map((link) => (
             <a key={link.url} href={link.url}>
