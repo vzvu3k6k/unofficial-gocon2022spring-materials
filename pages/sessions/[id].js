@@ -4,6 +4,7 @@ import { Layout } from "../../components/Layout";
 import { Footer } from "../../components/Footer";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import { SpeakerDeck } from "../../components/SpeakerDeck";
+import { YouTube } from "../../components/YouTube";
 import { getSession, getSessions, hasContent } from "../../lib/sessions";
 
 export default function Session({ session }) {
@@ -22,6 +23,7 @@ export default function Session({ session }) {
           session.tweets.map((tw) => (
             <TwitterTweetEmbed key={tw} tweetId={tw} />
           ))}
+        {session.youtube && <YouTube url={session.youtube} />}
         {session.speakerdeck && <SpeakerDeck src={session.speakerdeck} />}
         {session.links &&
           session.links.map((link) => (
